@@ -1,0 +1,46 @@
+% PEMILIHAN JURUSAN
+
+% DATABASE
+:- dynamic minat_pos/1.
+:- dynamic minat_neg/1.
+
+% FAKTA & ATURAN
+jurusan("MIPA").
+jurusan("Teknik").
+jurusan("Soshum").
+jurusan("Ekonomi").
+
+minat(matematika, "MIPA").
+minat(kimia, "MIPA").
+minat(biologi, "MIPA").
+minat(teknologi, "Teknik").
+minat(logika, "Teknik").
+minat(praktik, "Teknik").
+minat(ips, "Soshum").
+minat(sastra, "Soshum").
+minat(interaksi, "Soshum").
+minat(mapel_ekonomi, "Ekonomi").
+minat(bisnis, "Ekonomi").
+
+pertanyaan(matematika, Y) :-
+    Y= "Apakah anda menyukai pelajaran matematika?".
+pertanyaan(kimia, Y) :-
+    Y= "Apakah anda menyukai pelajaran kimia?".
+pertanyaan(biologi, Y) :-
+    Y= "Apakah anda menyukai pelajaran biologi?".
+pertanyaan(teknologi, Y) :-
+    Y= "Apakah anda tertarik dengan perkembangan teknologi?".
+pertanyaan(logika, Y) :-
+    Y= "Apakah anda suka memecahkan masalah logika?".
+pertanyaan(praktik, Y) :-
+    Y= "Apakah anda lebih suka praktik daripada teori?".
+pertanyaan(IPS, Y) :-
+    Y= "Apakah anda menyukai pelajaran IPS?".
+pertanyaan(sastra, Y) :-
+    Y= "Apakah anda suka membaca buku sejarah/sastra?".
+pertanyaan(mapel_ekonomi, Y) :-
+    Y= "Apakah anda menyukai pelajaran ekonomi?".
+pertanyaan(bisnis, Y) :-
+    Y= "Apakah anda tertarik dengan bisnis?".
+pertanyaan(interaksi, Y) :-
+    Y= "Apakah anda suka berinteraksi dengan manusia?".
